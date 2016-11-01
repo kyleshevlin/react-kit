@@ -9,7 +9,8 @@
   "author": "Mathieu Brochard <mathieu.brochard@gmx.fr>",
   "license": "MIT",
   "scripts": {
-    "build": "webpack -d"
+    "build": "webpack -d",
+    "start": "webpack-dev-server"
   },
   "devDependencies": {
     "webpack": "^1.13.3",
