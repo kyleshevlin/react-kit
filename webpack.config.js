@@ -20,6 +20,9 @@ module.exports = {
     }, {
       test: /\.ejs$/,
       loader: 'ejs-loader'
+    }, {
+      test: /\.scss$/,
+      loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ]
     }]
-  }
+  },
 }
