@@ -1,0 +1,18 @@
+{
+  "name": "react-kit",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": {
+    "url": "git@github.com:mathieubrochard/react-kit.git",
+    "type": "git"
+  },
+  "author": "Mathieu Brochard <mathieu.brochard@gmx.fr>",
+  "license": "MIT",
+  "scripts": {
+    "build": "webpack -d"
+  },
+  "devDependencies": {
+    "webpack": "^1.13.3",
+    "webpack-dev-server": "^1.16.2"
+  }
+}
