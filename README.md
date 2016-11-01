@@ -3,9 +3,10 @@
 A minimalistic kit to bootstrap a React application with a set of pre-configured tools.
 
 ## Included tools
-- [yarn]() a powerful package manager
-- [react]() (obviously)
-- [redux]() library to manage the data flow
+- [yarn](https://github.com/yarnpkg/yarn) a powerful package manager
+- [react](https://facebook.github.io/react/) (obviously)
+- [redux](http://redux.js.org/) library to manage the data flow
+- [redux-thunk](https://github.com/gaearon/redux-thunk) get an asynchronous data flow for redux
 - [webpack](https://webpack.github.io/docs/) as module bundler
 
 ### Loaders
@@ -22,7 +23,7 @@ A minimalistic kit to bootstrap a React application with a set of pre-configured
 ```
 npm install -g yarn
 ```
-Installs the [yarn]() package manager.
+Installs the [yarn](https://github.com/yarnpkg/yarn) package manager.
 
 ```
 yarn build
@@ -34,7 +35,3 @@ yarn start
 ```
 Starts a development server running on `http://localhost:8080`.  
 **Caution**: do not use this command for production.
-
-
-
-
