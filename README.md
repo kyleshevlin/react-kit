@@ -21,6 +21,17 @@ A minimalistic kit to bootstrap a React application with a set of pre-configured
 
 ## Usage
 ```
+git clone https://github.com/mathieubrochard/react-kit <project-name>
+cd <project-name>
+```
+Clone the React Kit repository to a directory and go into it.
+
+```
+rm -rf .git .gitignore README.md LICENCE
+```
+Clean your directory from all git files, readme and license.
+
+```
 npm install -g yarn
 ```
 Installs the [yarn](https://github.com/yarnpkg/yarn) package manager.
