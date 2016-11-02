@@ -24,12 +24,12 @@ A minimalistic kit to bootstrap a React application with a set of pre-configured
 git clone https://github.com/mathieubrochard/react-kit <project-name>
 cd <project-name>
 ```
-Clone the React Kit repository to a directory and go into it.
+Clones the React Kit repository to a directory and go into it.
 
 ```
 rm -rf .git .gitignore README.md LICENCE
 ```
-Clean your directory from all git files, readme and license.
+Cleans your directory from all git files, readme and license.
 
 ```
 npm install -g yarn
