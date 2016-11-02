@@ -27,7 +27,7 @@ cd <project-name>
 Clones the React Kit repository to a directory and go into it.
 
 ```
-rm -rf .git .gitignore README.md LICENCE
+rm -rf .git .gitignore README.md LICENSE
 ```
 Cleans your directory from all git files, readme and license.
 
@@ -35,6 +35,11 @@ Cleans your directory from all git files, readme and license.
 npm install -g yarn
 ```
 Installs the [yarn](https://github.com/yarnpkg/yarn) package manager.
+
+```
+yarn install
+```
+Installs all the dependencies.
 
 ```
 yarn build
