@@ -1,6 +1,6 @@
 <img src="http://i.imgur.com/b5Ole4s.png" height="100" />
 ---
-A minimalistic kit to bootstrap a React application with a set of pre-configured tools.
+A minimalistic kit to bootstrap a React application with a set of preconfigured tools.
 
 ## Included tools
 - [yarn](https://github.com/yarnpkg/yarn) a powerful package manager
