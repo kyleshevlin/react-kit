@@ -23,6 +23,9 @@ module.exports = {
     }, {
       test: /\.scss$/,
       loaders: [ 'style', 'css?sourceMap', 'sass?sourceMap' ]
+    }, {
+      test: /\.(eot|svg|ttf|woff(2)?)(\?v=\d+\.\d+\.\d+)?/,
+      loader: 'url'
     }]
   },
 }

@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import thunk from 'redux-thunk'
+import 'font-awesome/scss/font-awesome.scss'
 import { Provider } from 'react-redux'
 import { createStore, applyMiddleware } from 'redux'
 
@@ -14,7 +15,7 @@ const store = createStore(
 
 const App = () => {
   return (
-    <h1>react-kit is working!</h1>
+    <h1>react-kit is working! <i className='fa fa-calendar'></i></h1>
   )
 }
 
