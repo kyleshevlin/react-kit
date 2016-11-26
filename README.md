@@ -12,16 +12,14 @@ A minimalistic kit to bootstrap a React application with a set of preconfigured 
 ### Loaders
 - [babel-loader](https://github.com/babel/babel-loader) to use Ecmascript features and transpile JSX
 - [sass-loader](https://github.com/jtangelder/sass-loader) to compile sass files
-- [ejs-loader](https://github.com/okonet/ejs-loader) to customize the generated `index.html` file
 
 ### Others
 - [eslint](http://eslint.org/) to get a Javascript linter
 - [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) to get a development server
-- [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) to generate an `index.html` file automatically
 
 ## Usage
 ```
-git clone https://github.com/mathieubrochard/react-kit <project-name>
+git clone https://github.com/kyleshevlin/react-kit <project-name>
 cd <project-name>
 ```
 Clones the React Kit repository to a directory and go into it.
