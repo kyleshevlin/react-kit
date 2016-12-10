@@ -11,7 +11,7 @@
   "scripts": {
     "build": "webpack -d --env.dev",
     "start": "webpack-dev-server --env.dev --hot",
-    "setup:new": "rm -rf .git README.md && yarn install && git init && touch README.md && echo \"# New Project\n\nBe sure to update this file and `package.json` with your new project's name.\" > README.md"
+    "setup:new": "rm -rf .git README.md && yarn install && git init && touch README.md && echo \"# New Project\n\nBe sure to update this file and package.json with your new project's name.\" > README.md"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
