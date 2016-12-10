@@ -6,15 +6,18 @@ A minimalistic kit to bootstrap a React application with a set of preconfigured 
 - [yarn](https://github.com/yarnpkg/yarn) a powerful package manager
 - [react](https://facebook.github.io/react/) (obviously)
 - [redux](http://redux.js.org/) library to manage the data flow
-- [redux-thunk](https://github.com/gaearon/redux-thunk) get an asynchronous data flow for redux
+- [redux-thunk](https://github.com/gaearon/redux-thunk) get an asynchronous data flow for Redux
+- [redux-devtools-extension](https://github.com/zalmoxisus/redux-devtools-extension) for debugging your Redux state
 - [webpack](https://webpack.github.io/docs/) as module bundler
 
 ### Loaders
 - [babel-loader](https://github.com/babel/babel-loader) to use Ecmascript features and transpile JSX
-- [sass-loader](https://github.com/jtangelder/sass-loader) to compile sass files
+- [sass-loader](https://github.com/jtangelder/sass-loader) to compile Sass files
+- [postcss-loader](https://github.com/postcss/postcss-loader) to process compiled CSS
 
 ### Others
 - [eslint](http://eslint.org/) to get a Javascript linter
+- [standard](https://github.com/feross/standard) JavaScript styleguide
 - [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) to get a development server
 
 ## Usage
