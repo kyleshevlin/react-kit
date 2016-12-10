@@ -28,19 +28,17 @@ cd <project-name>
 Clones the React Kit repository to a directory and go into it.
 
 ```
-rm -rf .git .gitignore README.md LICENSE
-```
-Cleans your directory from all git files, readme and license.
-
-```
 npm install -g yarn
 ```
 Installs the [yarn](https://github.com/yarnpkg/yarn) package manager.
 
 ```
-yarn install
+yarn run setup:new
 ```
-Installs all the dependencies.
+* Removes previous `.git` directory and README
+* Installs all dependencies with Yarn
+* Initializes a new git repo
+* Touches a README file and adds some text to the file for you to edit, with a reminder to also edit your `package.json` file with your new project's information
 
 ```
 yarn build
@@ -50,5 +48,5 @@ Builds your project into the `build/` directory.
 ```
 yarn start
 ```
-Starts a development server running on `http://localhost:8080`.  
+Starts a development server running on `http://localhost:8080`.
 **Caution**: do not use this command for production.

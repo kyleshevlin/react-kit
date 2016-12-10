@@ -3,14 +3,15 @@
   "version": "1.0.0",
   "main": "index.js",
   "repository": {
-    "url": "git@github.com:mathieubrochard/react-kit.git",
+    "url": "git@github.com:kyleshevlin/react-kit.git",
     "type": "git"
   },
-  "author": "Mathieu Brochard <mathieu.brochard@gmx.fr>",
+  "author": "Kyle Shevlin <kyle.a.shevlin@gmail.com>",
   "license": "MIT",
   "scripts": {
     "build": "webpack -d --env.dev",
-    "start": "webpack-dev-server --env.dev --hot"
+    "start": "webpack-dev-server --env.dev --hot",
+    "setup:new": "rm -rf .git README.md && yarn install && git init && touch README.md && echo \"# New Project\n\nBe sure to update this file and `package.json` with your new project's name.\" > README.md"
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
