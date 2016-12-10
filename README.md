@@ -1,5 +1,7 @@
 <img src="http://i.imgur.com/b5Ole4s.png" height="100" />
+
 ---
+
 A minimalistic kit to bootstrap a React application with a set of preconfigured tools.
 
 ## Included tools
@@ -16,37 +18,39 @@ A minimalistic kit to bootstrap a React application with a set of preconfigured 
 - [postcss-loader](https://github.com/postcss/postcss-loader) to process compiled CSS
 
 ### Others
-- [eslint](http://eslint.org/) to get a Javascript linter
+- [eslint](http://eslint.org/) to get a JavaScript linter
 - [standard](https://github.com/feross/standard) JavaScript styleguide
 - [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) to get a development server
 
 ## Usage
+
+Clone the repo, using your own project name
 ```
 git clone https://github.com/kyleshevlin/react-kit <project-name>
 cd <project-name>
 ```
-Clones the React Kit repository to a directory and go into it.
 
+If Yarn is not already installed globally on your machine, install it.
 ```
 npm install -g yarn
 ```
-Installs the [yarn](https://github.com/yarnpkg/yarn) package manager.
 
+Now we can run a script to do some initial setup of your project.
 ```
 yarn run setup:new
 ```
+This script does the following:
 * Removes previous `.git` directory and README
 * Installs all dependencies with Yarn
 * Initializes a new git repo
 * Touches a README file and adds some text to the file for you to edit, with a reminder to also edit your `package.json` file with your new project's information
 
+Now, we can start the app in two ways. First, we can build the app into a `build/` directory:
 ```
 yarn build
 ```
-Builds your project into the `build/` directory.
 
+Or we can start it using `webpack-dev-server` at `http://localhost:8080`:
 ```
 yarn start
 ```
-Starts a development server running on `http://localhost:8080`.
-**Caution**: do not use this command for production.
