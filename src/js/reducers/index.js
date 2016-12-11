@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux'
+import { routerReducer } from 'react-router-redux'
 import { TEST_ACTION_CREATOR } from '../actions'
 
 const initialState = {
@@ -14,4 +16,7 @@ const rootReducer = (state = initialState, action) => {
   }
 }
 
-export default rootReducer
+export default combineReducers({
+  rootReducer,
+  routing: routerReducer
+})

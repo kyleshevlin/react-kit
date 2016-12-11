@@ -19,6 +19,9 @@ module.exports = (env) => {
       reasons: true,
       chunks: false
     },
+    devServer: {
+      historyApiFallback: true
+    },
     devtool: env.prod ? 'source-map' : 'eval',
     module: {
       preLoaders: [
