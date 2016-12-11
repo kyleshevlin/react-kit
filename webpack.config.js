@@ -38,11 +38,6 @@ module.exports = (env) => {
           exclude: /node_modules/
         },
         {
-          test: /\.ejs$/,
-          loader: 'ejs-loader',
-          exclude: /node_modules/
-        },
-        {
           test: /\.scss$/,
           loader: ExtractTextPlugin.extract({
             fallbackLoader: 'style-loader',
