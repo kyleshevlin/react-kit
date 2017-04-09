@@ -1,4 +1,4 @@
-import { TEST_ACTION_CREATOR } from '../actions'
+import * as types from '../constants/actionTypes'
 
 const initialState = {
   testState: false
@@ -6,8 +6,8 @@ const initialState = {
 
 const reducer = (state = initialState, action) => {
   switch (action.type) {
-    case TEST_ACTION_CREATOR:
-      return Object.assign({}, state, { testState: !state.testState })
+    case types.TEST_ACTION_CREATOR:
+      return { ...state, testState: !state.testState }
 
     default:
       return state

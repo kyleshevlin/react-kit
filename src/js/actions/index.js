@@ -1,4 +1,5 @@
-export const TEST_ACTION_CREATOR = 'TEST_ACTION_CREATOR'
+import * as types from '../constants/actionTypes'
+
 export function testActionCreator () {
-  return { type: TEST_ACTION_CREATOR }
+  return { type: types.TEST_ACTION_CREATOR }
 }

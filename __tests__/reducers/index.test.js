@@ -1,5 +1,5 @@
 import reducer from '../../src/js/reducers'
-import { testActionCreator } from '../../src/js/actions'
+import * as actions from '../../src/js/actions'
 
 describe('Reducer', () => {
   it('returns state when action is unaccounted for', () => {
@@ -23,7 +23,7 @@ describe('Reducer', () => {
       testState: true
     }
 
-    const action = testActionCreator()
+    const action = actions.testActionCreator()
 
     expect(
       reducer(initialState, action)
