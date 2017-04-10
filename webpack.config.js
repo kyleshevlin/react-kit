@@ -61,7 +61,7 @@ module.exports = env => {
       new HtmlWebpackPlugin({
         template: './templates/index.ejs',
         title: 'React Kit'
-      }),
+      })
     ]
   }
 
