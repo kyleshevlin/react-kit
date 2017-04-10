@@ -1,14 +1,16 @@
+const webpack = require('webpack')
 const path = require('path')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 
 module.exports = env => {
   const config = {
-    // context: __dirname,
-    entry: './src/js/entry.js',
+    context: path.join(__dirname, 'src'),
+    entry: './js/entry.js',
     output: {
       path: path.join(__dirname, 'build'),
       filename: 'bundle.js',
-      publicPath: '/build/'
+      publicPath: '/'
     },
     resolve: {
       extensions: ['.js', '.jsx']
@@ -52,7 +54,14 @@ module.exports = env => {
       ]
     },
     plugins: [
-      new ExtractTextPlugin('style.css')
+      new webpack.DefinePlugin({
+        'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV || 'development')
+      }),
+      new ExtractTextPlugin('style.css'),
+      new HtmlWebpackPlugin({
+        template: './templates/index.ejs',
+        title: 'React Kit'
+      }),
     ]
   }
 
