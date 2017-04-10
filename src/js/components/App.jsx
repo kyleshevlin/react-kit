@@ -1,10 +1,11 @@
 import React from 'react'
 import { Provider } from 'react-redux'
 import store from '../store'
+import Greeting from './Greeting'
 
 const App = () => (
   <Provider store={store}>
-    <h1>React Kit is working!</h1>
+    <Greeting message='Greetings from React Kit!' />
   </Provider>
 )
 
