@@ -6,7 +6,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = env => {
   const config = {
     context: path.join(__dirname, 'src'),
-    entry: './js/entry.js',
+    entry: './js/Entry.jsx',
     output: {
       path: path.join(__dirname, 'build'),
       filename: 'bundle.js',
