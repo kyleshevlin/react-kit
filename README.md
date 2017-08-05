@@ -19,7 +19,8 @@ A minimalistic kit to bootstrap a React application with a set of preconfigured 
 
 ### Others
 - [eslint](http://eslint.org/) to get a JavaScript linter
-- [standard](https://github.com/feross/standard) JavaScript styleguide
+- [eslint-config-airbnb](https://www.npmjs.com/package/eslint-config-airbnb) for configuring out linting
+- [prettier](https://github.com/prettier/prettier) for auto formatting our code
 - [webpack-dev-server](https://webpack.github.io/docs/webpack-dev-server.html) to get a development server
 
 ## Usage
