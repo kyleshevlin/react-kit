@@ -3,10 +3,9 @@ import { Provider } from 'react-redux'
 import store from '../store'
 import Greeting from './Greeting'
 
-const App = () => (
+const App = () =>
   <Provider store={store}>
-    <Greeting message='Greetings from React Kit!' />
+    <Greeting message="Greetings from React Kit!" />
   </Provider>
-)
 
 export default App

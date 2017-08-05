@@ -12,6 +12,7 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "build": "webpack -d --env.dev",
+    "format": "prettier --write --no-semi --single-quote --print-width=120 --parser=flow --tab-width=2 \"src/js/**/*.{js,jsx}\"",
     "start": "webpack-dev-server --env.dev --hot",
     "setup:new": "rm -rf .git README.md && yarn install && git init && touch README.md && echo \"# New Project\n\nBe sure to update this file and package.json with your new project's name.\" > README.md"
   },
