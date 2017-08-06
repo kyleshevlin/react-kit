@@ -1,14 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+// @flow
 
-const Greeting = ({ message }) =>
+import React from 'react'
+
+const Greeting = ({ message }: { message: string }) =>
   <h1>
     {message}
   </h1>
-
-Greeting.propTypes = {
-  message: PropTypes.string
-}
 
 Greeting.defaultProps = {
   message: 'Hello world!'
