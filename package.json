@@ -17,6 +17,9 @@
     "start": "webpack-dev-server --env.dev --hot",
     "setup:new": "rm -rf .git README.md && yarn install && git init && touch README.md && echo \"# New Project\n\nBe sure to update this file and package.json with your new project's name.\" > README.md"
   },
+  "jest": {
+    "snapshotSerializers": ["jest-serializer-enzyme"]
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.25.0",
@@ -24,12 +27,14 @@
     "babel-jest": "^20.0.3",
     "babel-loader": "^7.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-polyfill": "^6.23.0",
     "babel-preset-es2015": "^6.24.1",
     "babel-preset-react": "^6.24.1",
     "classnames": "^2.2.5",
     "css-loader": "^0.28.4",
+    "enzyme": "^2.9.1",
     "eslint": "^4.4.0",
     "eslint-config-airbnb": "^15.1.0",
     "eslint-config-prettier": "^2.3.0",
